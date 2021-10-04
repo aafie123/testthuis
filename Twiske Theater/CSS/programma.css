@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.col {
+	width: 100%;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+
+@media screen and (max-width:768px) {
+	
+	.col-md-one-half {
+		width: 25%;
+	}
+	
+	.col {
+		float: left;
+		padding: 0px 7px 14px;
+	}
+}
+
+

@@ -1,0 +1,581 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header, main, article, footer {
+	display: block;
+	box-sizing: border-box;
+}
+
+#container {
+	position: relative;
+	width: 100%;	
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-position: center;
+}
+.hero {
+	background-image: url("../images/header.jpg");
+    min-height: 100vh;
+}
+
+.hero2 {
+	background-image:url("../images/hero2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;	
+}
+
+.hero3 {
+	background-image:url("../images/hero3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+
+}
+
+.hero4 {
+	background-image:url("../images/hero4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+}
+
+
+#logo {
+    position: absolute;
+    margin-left: 45px;
+    width: 190px;
+    height: 80px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;    
+}
+
+article {
+    min-height: 300px;
+    background: #E5E9EC;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+main {
+    min-height: 350px;
+	background-color: white;
+    padding: 80px;
+/*	background-size: cover;
+    background-position: center;*/
+}
+
+section.tweekolommen {
+	column-count: 2;
+}
+
+#intro {
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0);
+}
+
+#introtekst {
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.infobalk {
+    padding-top: 20px;
+    padding-left: 30px;
+	 padding-right: 30px;
+    padding-bottom: 15px;
+    background-color: lightgray;
+}
+
+/* animatie afterparty
+----------------------------------------------------------------------------- */
+
+#animation_container {
+/*	margin: 0 auto;*/
+	left:0;right:0;
+  }
+
+#dom_overlay_container {
+  pointer-events:none; 
+  overflow:hidden; 
+  position: absolute; 
+  left: 0px; 
+  right: 0px;
+  top: 0px;
+  display: block;
+}
+
+
+/* Calender
+----------------------------------------------------------------------------- */
+
+#terug {
+    background-image: url("../images/terug.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	float: left;
+    width: 50px;
+    height: 50px;
+}
+
+#verder {
+    background-image: url("../images/verder.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	float: right;
+    width: 50px;
+    height: 50px;
+}
+
+*,:active {
+	outline: none;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	margin: 20px;
+	background-color: #EEEDE9;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-size: 96.5%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+input {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, p{
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #FF462B;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.animate{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.jzdbox1 {
+  width:350px; 
+  height: 355px;
+  overflow:hidden; 
+  display:block; 
+  padding-top: 25px;
+  padding-left: 25px;
+  margin:0 auto;
+}
+
+.jzdcal {
+  box-sizing:border-box!important; 
+  background:#00afaa; 
+}
+
+.jzdcalt {
+  font: 18px 'Roboto';
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.jzdcal span {
+  font:11px 'Roboto'; 
+  font-weight:400; 
+  color:#fff; 
+  text-align:center; 
+  width:42px; 
+  height:42px; 
+  display:inline-block; 
+  float:left; 
+  overflow:hidden; 
+  line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+  opacity:0.3; 
+  content:'o';
+}
+
+.circle {
+  border: 2px solid #fff;
+  box-sizing:border-box!important; 
+  border-radius:200px!important;
+}
+
+.circle:hover {
+	background-color: #c89210;
+}
+
+span[data-title]:hover:after, 
+div[data-title]:hover:after {
+  font:11px 'Roboto'; 
+  font-weight:400; 
+  content:attr(data-title); 
+  position:absolute; 
+  margin:0 0 100px; 
+  background:black; 
+  border:1px solid #fff; 
+  color:#fff; 
+  padding:5px; 
+  z-index:9999; 
+  min-width:150px; 
+  max-width:150px;
+}
+
+
+/* Genres pagina programma.html
+----------------------------------------------------------------------------- */
+
+.col-md-genres1,.col-md-genres2,.col-md-genres3,.col-md-genres4,.col-md-genres5,.col-md-genres6 {
+    float: left;
+    padding-top: 0px;
+    padding-right: 7px;
+    padding-bottom: 14px;
+	width: 16.66%;
+	min-height: 150px;
+	cursor: pointer;
+}
+
+
+/* voorstellingen pagina programma.html
+----------------------------------------------------------------------------- */
+
+.voorstelling {
+	float: left;
+	width: 50%;
+	padding-top: 35px;
+	padding-left: 35px;
+	min-height: 250px;
+	background-color: #00afaa; 
+}
+
+.left1 {background-image:url("../images/dekleinetrompetter1.jpg");background-size: cover;}
+.left2 {background-image:url("../images/vincent_bijlo1.jpg");background-size: cover;}
+.left3 {background-image:url("../images/knijn1.jpg");background-size: cover;}
+.left4 {background-image:url("../images/demondvol1.gif");background-size: cover;}
+.left5 {background-image:url("../images/hetbestevan.jpg");background-size: cover;}
+.left6 {background-image:url("../images/transformers1.jpg");background-size: cover;}
+.left7 {background-image:url("../images/demondvol1.gif");background-size: cover;}
+.left8 {background-image:url("../images/pit1.jpg");background-size: cover;}
+.left9 {background-image:url("../images/kleinkunstFestival.jpg");background-size: cover;}
+.left10 {background-image:url("../images/arie_blok1.jpg");background-size: cover;}
+.left11 {background-image:url("../images/quatroventos1.jpg");background-size: cover;}
+.left12 {background-image:url("../images/demondvol1.gif");background-size: cover;}
+.left13 {background-image:url("../images/sjaak_bral1.jpg");background-size: cover;}
+.left14 {background-image:url("../images/demondvol1.gif");background-size: cover;}
+.left15 {background-image:url("../images/TheWave.jpg");background-size: cover;}
+.left16 {background-image:url("../images/TheWave3.jpg");background-size: cover;}
+.left17 {background-image:url("../images/TheWave2.jpg");background-size: cover;}
+.left18 {background-image:url("../images/TheWave4.jpg");background-size: cover;}
+.left19 {background-image:url("../images/cocktail.jpg");background-size: cover;}
+.left20 {background-image:url("../images/Beerlingzaal.gif");background-size: cover;background-repeat: no-repeat;}
+.left21 {background-image:url("../images/hofmanzaal.gif");background-size: cover;background-repeat: no-repeat;}
+.left22 {background-image:url("../images/raadszaal.gif");background-size: cover;background-repeat: no-repeat;}
+.left23 {background-image:url("../images/theaterzaal.gif");background-size: cover;background-repeat: no-repeat;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Buttons
+----------------------------------------------------------------------------- */
+
+.button {
+	padding-right: 14px;
+    padding-left: 14px;
+    background-color: #161C21;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 3em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+
+.button1 {
+    background-color: #161C21;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.button1:hover {
+  background-color: #c89210; /*geel*/
+  border: 1px solid #c89210; /*geel*/
+  color: #fff;
+}
+
+.button2 {
+    background-color: #161C21;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.button2:hover {
+  background-color: #c89210; /*geel*/
+  color: #fff;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer
+----------------------------------------------------------------------------- */
+
+* {box-sizing: border-box;}
+
+
+/* 4 klommen_footer */
+.column {
+  float: left;
+  width: 25%;
+  padding: 40px;
+  min-height: 350px;
+}
+
+/* Clear floats na de columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+	background-color: #161C21;
+}
+.footer-socials {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.footer-socials a{
+	display: inline-block;
+}
+
+.footer-socials i {
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	background: transparent;
+	border: 1px solid #fff;
+	margin: 0px auto;
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 18px;
+	color: #323E48;
+
+}
+
+i.fa.fa {color: white;}
+
+.footer-socials i:hover {background-color: #c89210; /*geel*/}
+	
+
+/* Parallax
+----------------------------------------------------------------------------- */
+.parallax {
+   min-height: 500px;
+    /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image:url("../images/afbeelding-parallax3.jpg");
+}
+
+
+/* Responsive layout Desktop Tablet and Phone
+----------------------------------------------------------------------------- */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.column {
+   width: 100%;
+}
+	
+.uwbezoek, .overons, .nieuws  {
+   padding-top: 0px;
+}
+	
+.contact {
+   padding-top: 40px;
+   min-height: 250px;
+}	
+		
+.uwbezoek {
+   min-height: 230px;
+	}
+
+.overons {
+   min-height: 20px;
+	}
+	
+.jzdbox1, .jzdbasf, .jzdcal  {
+   margin-left: 1px;
+   margin-right: 1px;
+	}
+} 
+
+
+/* (800px and down) */
+@media only screen and (max-width: 800px) {
+.slideshow {
+    padding-top: 80px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 80px;
+	}	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	
+	
+.column {
+   width: 50%;
+}
+	
+.overons, .nieuws {
+   padding-top: 0px;
+	}
+	
+.contact, .uwbezoek {
+   min-height: 290px;
+	}
+	
+article {
+   padding-left: 10px;
+   padding-right: 10px;
+	}	
+} 
+	
+
+/*(768px and down)*/
+@media screen and (max-width:768px){
+			
+.voorstelling  {
+   width: 100%;
+  }	
+	
+.col-md-genres1,.col-md-genres2,.col-md-genres3,.col-md-genres4,.col-md-genres5,.col-md-genres6
+	{
+   width: 33.33%;
+   float: left;
+   padding: 0px 7px 14px;
+	}
+}
+
+/* (768px and up) */
+@media only screen and (min-width: 768px) {
+	
+	
+/* 4 klommen_footer */
+.column {
+  float: left;
+  width: 25%;
+  padding: 40px;
+  min-height: 350px;
+	}	
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	
+article {
+    padding-left: 10px;
+    padding-right: 10px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+}
+
+
+
+
+
+/* Mediaquery voor print
+----------------------------------------------------------------------------- */
+
+/* Mediaquery homepage voor print */
+@media print {	
+#myTopnav, .hero, article, .parallax, .center, footer {display: none;}
+}
+/* Mediaquery pagina programma voor print */
+@media print {	
+.hero2, .genres, footer {display: none;}
+}
+/* Mediaquery pagina afterparty voor print */
+@media print {	
+.hero4, .afterparty, footer {display: none;}
+}
+/* Mediaquery pagina zakelijk voor print */
+@media print {	
+.hero3, footer {display: none;}
+}
+/* Mediaquery pagina theaterverhuur voor print */
+@media print {	
+.hero3, footer, .theaterzaal, .beerlingzaal, .hofmanzaal, .raadszaal {display: none;}
+}

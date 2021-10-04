@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>twiske theater</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="CSS/layout.css" rel="stylesheet" type="text/css">
+<link href="CSS/opmaak.css" rel="stylesheet" type="text/css">
+<link href="CSS/menu.css" rel="stylesheet" type="text/css">
+<link href="CSS/text slideshow.css" rel="stylesheet" type="text/css">
+<link href="CSS/binnenkort.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="init();" style="margin:0px;">
+	
+	<div class="topnav" id="myTopnav">
+		
+		<div class="row" style="position:fixed; top:0; width:100%; z-index: 100; background-color: #161C21;">
+				<div class="col">
+					
+			<!--logo-->
+				<a href="index.html"><div id="logo"><img src="images/logo-twiske.svg" width="155" height="80" alt=""></div></a>
+		
+			<!--button nieuws + dropdown-->
+		  <div class="dropdown">
+    <button class="dropbtn" style="padding-right: 70px;"><a href="#.html">Nieuws <i class="fa fa-caret-down"></i></a>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Pers</a>
+      <a href="#">Last-minute service</a>
+      <a href="#">Webwinkel</a>
+      <a href="#">Forum</a>
+    </div>
+  </div> 
+			<!--button zakelijk + dropdown-->
+		  <div class="dropdown">
+    <button class="dropbtn"><a href="zakelijk.html">Zakelijk <i class="fa fa-caret-down"></i></a>
+    </button>
+    <div class="dropdown-content">
+      <a href="theaterverhuur.html">Theaterverhuur</a>
+    </div>
+  </div> 
+			<!--button uw bezoek + dropdown-->
+		  <div class="dropdown">
+    <button class="dropbtn"><a href="#.html">Uw bezoek <i class="fa fa-caret-down"></i></a>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Kaartverkoop</a>
+      <a href="#">Bereikbaarheid</a>
+    </div>
+  </div> 
+			<!--button programma + dropdown-->
+  <div class="dropdown">
+    <button class="dropbtn"><a href="programma.html">Programma <i class="fa fa-caret-down"></i></a>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Cabaret</a>
+      <a href="#">Muziek</a>
+      <a href="#">Dans</a>
+      <a href="#">Toneel</a>
+      <a href="#">Musical</a>
+      <a href="afterparty1.html">Afterparty</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div><!--#topnav-->
+		</div><!--#balk-->
+				</div><!--#col-->
+	
+	<header class="hero"></header>
+	
+	
+<!--hier begint de content-->
+				<main class="slideshow">
+					<div id="content" class="group">
+				<div class="row">
+				
+				<div class="slideshow-wrapper">
+
+				<!--text slider 1-->
+				<div class="mySlides">
+  				<q>Het theater Het Twiske Theater is een mooi theater met 1 theaterzaal met 200 stoelen.<br> Daarnaast zijn er nog 3 kleine zalen voor 20 personen voor recepties en andere bijeenkomsten.</q>
+				</div>
+
+				<!--text slider 2-->
+				<div class="mySlides">
+  				<q>Het theater ligt in het centrum van Oostzaan en biedt jaarlijks zo’n 70 voorstellingen voor meer dan 10.000 bezoekers.
+	 			In het Twiske Theater kan men genieten van een breed en gevarieerd theateraanbod: van toneel tot dans, van muziek tot cabaret.</q>
+				</div>
+
+				<!--text slider 3-->
+				<div class="mySlides">
+  				<q>Ook vinden er vergaderingen, seminars, congressen, bedrijfspresentaties en voorstellingen van scholen, dansscholen en amateur-gezelschappen plaats.</q>
+				</div>
+				</div>
+
+				<div class="dot-wrapper">
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+  				<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+					
+					</div><!--#row-->
+					</div><!--#content-->
+				</main>
+	
+					
+					
+<!--binnenkort - hier begint article met de voorstelling die er binnenkort aankomen-->
+				<article>
+					<div><h2 style="text-align: center;">Binnenkort in ons theater!</h2></div><br><br>
+					
+         		<div class="binnenkort">
+        		<section class="tm-section row"></section>          
+        		<section class="tm-section tm-section-margin-bottom-0 row">
+				<div class="col-lg-12 tm-popular-items-binnenkort">
+				
+				<!--hier begint de eerste voorstelling-->
+        		<div class="tm-popular-item">
+				<img src="images/popular-1.jpg" alt="Popular" class="tm-popular-item-img">
+              	<div class="tm-popular-item-description">
+				   	<div style="margin-top: 20px;">
+						<voorstellingen-h3>Ierse Folk muziek</voorstellingen-h3><br>
+             			<p>Za 24 jan</p>
+						   <p><em>Maecenas tempus, tellus eget condimentum rhoncus</em></p>
+						<a href="programma.html" class="button button2">meer info</a>
+					</div></div></div>
+					
+				
+				<!--hier begint de tweede voorstelling-->
+            	<div class="tm-popular-item">
+              	<img src="images/popular-2.jpg" alt="Popular" class="tm-popular-item-img">
+              	<div class="tm-popular-item-description">
+					<div style="margin-top: 20px;">
+						<voorstellingen-h3>Quattro Vantos</voorstellingen-h3><br>
+             			<p>Vr 03 juli</p>
+						   <p><em>Maecenas tempus, tellus eget condimentum rhoncus</em></p>
+						<a href="programma.html" class="button button2">meer info</a>
+					</div></div></div>
+					
+					
+				<!--hier begint de derde voorstelling-->
+            	<div class="tm-popular-item">
+              	<img src= "images/popular-3.jpg" alt="Popular" class="tm-popular-item-img">
+              	<div class="tm-popular-item-description">
+					<div style="margin-top: 20px;">
+						<voorstellingen-h2 style= "color:black;">Het beste van</voorstellingen-h2><br>
+             			<p>do 12 aug</p>
+						   <p><em>Maecenas tempus, tellus eget condimentum rhoncus</em></p>
+						<a href="programma.html" class="button button2">meer info</a>
+					</div></div></div>
+										
+			</div>		<!--#col-lg-12 tm-popular-items-binnenkort-->        
+			</section>	<!--#tm-section tm-section-margin-bottom-0 row-->
+			</div>		<!--#binnenkort-->
+			</article>
+		
+	
+<!--calender-->	
+			<div class="parallax center">
+			<div id="terug"><img src="images/terug.png" alt="terug"></div>
+			<div class="jzdbox1 jzdbasf jzdcal" style="border: 2px solid #fff;">
+			<div class="jzdcalt" style="width: 100px; margin: 0 auto;">Juni 2021</div>
+
+			<span>Zo</span>
+			<span>Ma</span>
+			<span>Di</span>
+			<span>Wo</span>
+			<span>Do</span>
+			<span>Vr</span>
+			<span>Za</span>
+
+
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="circle" data-title="Kleinkunst Festival">1</span>
+			<span class="circle" data-title="Transformers">2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+			<span class="circle" data-title="Caberet">7</span>
+			<span>8</span>
+			<span>9</span>
+			<span>10</span>
+			<span>11</span>
+			<span class="circle" data-title="Rockmusical 'The Wave'">12</span>
+			<span>13</span>
+			<span>14</span>
+			<span class="circle" data-title="Fado retrato">15</span>
+			<span class="circle" data-title="Koffiehuis de Ooievaar">16</span>
+			<span>17</span>
+			<span class="circle" data-title="Mijn laatste sigaret">18</span>
+			<span>19</span>
+			<span>20</span>
+			<span class="circle" data-title="Terug van weggeweest">21</span>
+			<span>22</span>
+			<span>23</span>
+			<span class="circle" data-title="Rockmusical 'The Wave'">24</span>
+			<span>25</span>
+			<span>26</span>
+			<span class="circle" data-title="Rockmusical 'The Wave'">27</span>
+			<span>28</span>
+			<span class="circle" data-title="Caberet">29</span>
+			<span>30</span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			<span class="jzdb"><!--BLANK--></span>
+			</div>
+			<div id="verder"><img src="images/verder.png" alt="verder"></div>
+			</div> <!--#parallax center-->
+	
+	
+	
+<!--button met toon volledige agenda-->		
+			<div class="center" style="min-height:150px;background-color: #00afaa;">
+			<a href="programma.html" class="button button2" style="margin: 15px;">toon volledige agenda</a></div>
+
+	
+	
+	
+<!--footer colomn 1 - contact-->
+			<div class="row" style="background-color: #161C21;">
+				<footer>
+					<div class="column contact">
+						<footer-h1>Contact</footer-h1><br>
+						<footer-p>Kerkbuurt<br>1511 BD Oostzaan<br>075 - 202 79 66<br></footer-p>
+			<!--footer Social media-->
+					<div class="footer-socials">
+                		<a href="#"><i class="fa fa-facebook"></i></a>
+                		<a href="#"><i class="fa fa-google"></i></a>
+                		<a href="#"><i class="fa fa-twitter"></i></a>
+                		<a href="#"><i class="fa fa-pinterest"></i></a>
+                	</div>
+					</div>
+	
+ 			<!--footer colomn 2 - uw bezoek-->
+					<div class="column uwbezoek">
+						<footer-h1>Uw bezoek</footer-h1><br>
+						<footer-p><a href="#">bereikbaarheid / route</a><br>
+						<a href="#">openingstijden</a><br>
+						</footer-p><br>
+						
+						<footer-h1><a href="#">Kaartverkoop</a></footer-h1>
+						<br><footer-p>
+						<a href="tel:0613535223">06 - 13 53 52 23</a> / <a href="https://api.whatsapp.com/send?phone=0613535223" target="_blank" rel="noopener">WhatsApp</a><br>
+						<a href="mailto:kaartverkoop@twisketheater.nl">kaartverkoop@twisketheater.nl</a></footer-p>			
+						</div>
+	
+ 			<!--footer colomn 3 - over ons-->
+					<div class="column overons">
+						<footer-h1>Over ons</footer-h1><br>
+						<footer-p><a href="afterparty1.html">afterparty</a></footer-p><br>
+						<footer-p><a href="#">zakelijk</a><br><a href="theaterverhuur.html">theaterverhuur</a></footer-p>
+   					</div>
+	
+ 			<!--footer colomn 4 - Nieuws en nieuwsbrief-->
+					<div class="column nieuws">
+ 						<footer-h1>Nieuws</footer-h1><br>
+ 						<footer-p><a href="pers.html">pers</a><br>
+ 						<a href="last-minute service.html">last-minute service</a><br>
+ 						<a href="webwinkel.html">webwinkel</a><br>
+ 						<a href="forum.html">forum</a><br></footer-p><br>
+						<footer-h1>Inschrijven <br>nieuwsbrief</footer-h1><br>
+			<!--button inschrijven nieuwsbrief-->
+						<a href="#" class="button button1">inschrijven</a>			
+	 				</div>
+					
+				</footer><!--#footer-->
+				</div><!--#row-->
+		
+	
+	
+	
+<!--#script text topnav-->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+	
+	
+<!--#script text slider-->
+<script> 
+	
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+ dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";  
+ dots[slideIndex-1].className += " active";
+}
+</script>
+	
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="slider.js?1625146506977"></script>
+
+
+</body>
+</html>
